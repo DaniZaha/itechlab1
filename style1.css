@@ -1,0 +1,25 @@
+form {
+  margin: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: black;
+  color: white;
+}
+
+.forms{
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: white;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+}
+
+input[type=submit]:hover{
+  background-color: #ddd;
+}
