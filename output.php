@@ -24,6 +24,7 @@ try {
         $res = $sth->fetchAll();
 
         echo "<table>";
+        echo "<tr><th>ID</th><th>DATE</th><th>PLACE</th><th>SCORE</th><th>T1</th><th>T2</th></tr>";
         foreach ($res as $row) {
           echo "<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td><td>$row[3]</td><td>$row[4]</td><td>$row[5]</td></tr>";
         }
@@ -42,6 +43,7 @@ try {
         $res = $sth->fetchAll();
 
         echo "<table>";
+        echo "<tr><th>ID</th><th>DATE</th><th>PLACE</th><th>SCORE</th><th>T1</th><th>T2</th></tr>";
         foreach ($res as $row) {
           echo "<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td><td>$row[3]</td><td>$row[4]</td><td>$row[5]</td></tr>";
         }
@@ -52,7 +54,7 @@ try {
         $date1 = str_replace("-", "/", $_GET['datetime1']);
         $date2 = str_replace("-", "/", $_GET['datetime2']);
 
-        if (!isset($date1) && !isset($date2)) {
+        if (isset($date1) && isset($date2)) {
           if ($date1 > $date2) {
             echo "First date must come before the second one";
           }else {
@@ -71,6 +73,7 @@ try {
         $res = $sth->fetchAll();
 
         echo "<table>";
+        echo "<tr><th>ID</th><th>DATE</th><th>PLACE</th><th>SCORE</th><th>T1</th><th>T2</th></tr>";
         foreach ($res as $row) {
           echo "<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td><td>$row[3]</td><td>$row[4]</td><td>$row[5]</td></tr>";
         }
